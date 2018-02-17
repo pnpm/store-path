@@ -10,7 +10,8 @@
   "scripts": {
     "prepublishOnly": "npm run tsc",
     "tsc": "rimraf lib && tsc",
-    "test": "preview && ts-node test && mos t"
+    "lint": "tslint -c tslint.json --project .",
+    "test": "npm run lint && preview && ts-node test && mos t"
   },
   "repository": {
     "type": "git",

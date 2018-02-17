@@ -1,11 +1,11 @@
 import canLink = require('can-link')
+import fs = require('mz/fs')
 import osHomedir = require('os-homedir')
 import path = require('path')
 import pathAbsolute = require('path-absolute')
-import touch = require('touch')
 import pathTemp = require('path-temp')
-import fs = require('mz/fs')
 import rootLinkTarget = require('root-link-target')
+import touch = require('touch')
 
 const STORE_VERSION = '2'
 
