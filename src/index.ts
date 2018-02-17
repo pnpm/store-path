@@ -8,7 +8,6 @@ import fs = require('mz/fs')
 import rootLinkTarget = require('root-link-target')
 
 const STORE_VERSION = '2'
-const STORE_DEFAULT_PATH = '~/.pnpm-store'
 
 export default async function (
   storePath: string | undefined,
