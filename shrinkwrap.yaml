@@ -6,7 +6,7 @@ dependencies:
   os-homedir: 1.0.2
   path-absolute: 1.0.0
   path-temp: 1.0.0
-  root-link-target: 1.0.0
+  root-link-target: 1.0.1
   touch: 3.1.0
 devDependencies:
   mos: 2.0.0-alpha.3
@@ -2383,7 +2383,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-v2zoO4dRDRY0Ru6qV37WpvxYNeA=
-  /root-link-target/1.0.0:
+  /root-link-target/1.0.1:
     dependencies:
       can-link: 1.0.1
       graceful-fs: 4.1.11
@@ -2393,7 +2393,7 @@ packages:
     engines:
       node: '>=4'
     resolution:
-      integrity: sha512-AtXc/3uSZ4zMaygX213wpFvDjnX9lmvKeSBGhbA/ImuPkW48HmZcXRgIrNtzkzLbINksBeacq3kalKo8iY8z3w==
+      integrity: sha512-FIuNwTKaZMndvVKGWDtMiwWoAW9Qs2Yh8gHz3ILHC9u7YBLRrvnfQeO8DQQq6+rdNmfCjM3oNLl6eQ6km5co0A==
   /safe-buffer/5.1.1:
     dev: true
     resolution:
@@ -3057,7 +3057,7 @@ specifiers:
   path-absolute: ^1.0.0
   path-temp: ^1.0.0
   rimraf: ^2.6.2
-  root-link-target: ^1.0.0
+  root-link-target: ^1.0.1
   tape: ^4.8.0
   touch: ^3.1.0
   ts-node: ^4.0.0

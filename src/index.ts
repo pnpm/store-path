@@ -10,8 +10,8 @@ import rootLinkTarget = require('root-link-target')
 const STORE_VERSION = '2'
 
 export default async function (
-  storePath: string | undefined,
   pkgRoot: string,
+  storePath?: string,
 ) {
   if (!storePath || isHomepath(storePath)) {
     const relStorePath = storePath ? storePath.substr(2) : '.pnpm-store'

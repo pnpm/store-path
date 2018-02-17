@@ -2,6 +2,6 @@ import test = require('tape')
 import storePath from '@pnpm/store-path'
 
 test('storePath()', async (t) => {
-  t.ok(storePath(undefined, process.cwd()))
+  t.ok(storePath(process.cwd()))
   t.end()
 })

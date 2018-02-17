@@ -37,7 +37,7 @@
     "os-homedir": "^1.0.2",
     "path-absolute": "^1.0.0",
     "path-temp": "^1.0.0",
-    "root-link-target": "^1.0.0",
+    "root-link-target": "^1.0.1",
     "touch": "^3.1.0"
   },
   "devDependencies": {

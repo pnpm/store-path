@@ -12,6 +12,15 @@
 npm i -S @pnpm/store-path
 ```
 
+## Usage
+
+```ts
+import resolveStorePath from '@pnpm/store-path'
+
+await resolveStorePath('F:\\project', 'pnpm-store')
+//> F:\\pnpm-store\\2
+```
+
 ## License
 
 [MIT](./LICENSE) © [Zoltan Kochan](https://www.kochan.io/)
