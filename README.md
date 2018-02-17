@@ -9,7 +9,7 @@
 ## Installation
 
 ```sh
-npm i -S @pnpm/logger @pnpm/store-path
+npm i -S @pnpm/store-path
 ```
 
 ## License
