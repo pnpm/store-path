@@ -2,6 +2,7 @@ dependencies:
   '@types/node': 9.4.6
   '@types/touch': 3.1.0
   can-link: 1.0.1
+  mkdirp-promise: 5.0.1
   mz: 2.7.0
   os-homedir: 1.0.2
   path-absolute: 1.0.0
@@ -1493,7 +1494,6 @@ packages:
     resolution:
       integrity: sha512-FyBrT/d0d4+uiZRbqznPXqw3IpZZG3gl3wKWiX784FycUKVwBt0uLBFkQrtE4tZOrgo78nZp2jnKz3L65T5LdQ==
   /minimist/0.0.8:
-    dev: true
     resolution:
       integrity: sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
   /minimist/1.2.0:
@@ -1503,7 +1503,6 @@ packages:
   /mkdirp-promise/5.0.1:
     dependencies:
       mkdirp: 0.5.1
-    dev: true
     engines:
       node: '>=4'
     resolution:
@@ -1511,7 +1510,6 @@ packages:
   /mkdirp/0.5.1:
     dependencies:
       minimist: 0.0.8
-    dev: true
     resolution:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   /mos-core/1.0.2:
@@ -3049,6 +3047,7 @@ specifiers:
   '@types/node': ^9.4.6
   '@types/touch': ^3.1.0
   can-link: ^1.0.1
+  mkdirp-promise: ^5.0.1
   mos: ^2.0.0-alpha.3
   mos-plugin-readme: ^1.0.4
   mz: ^2.7.0
