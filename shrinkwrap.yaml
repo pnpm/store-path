@@ -1,7 +1,7 @@
 dependencies:
   '@types/node': 9.4.6
   '@types/touch': 3.1.0
-  can-link: 1.0.1
+  can-link: 1.0.2
   mkdirp-promise: 5.0.1
   mz: 2.7.0
   os-homedir: 1.0.2
@@ -458,14 +458,14 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-1UVjW+HjPFQmScaRc+Xeas+uNN0=
-  /can-link/1.0.1:
+  /can-link/1.0.2:
     dependencies:
       graceful-fs: 4.1.11
     dev: false
     engines:
       node: '>=4'
     resolution:
-      integrity: sha512-UsNOqt2d9kRQYnVRQpA0Sr0DEoWTOBqoqSbWY1y45Ds8uLttyyr91TRM1hDDjvvW2wngY9cbRekrervbr2IuIA==
+      integrity: sha512-2zyqEs49pyv+Ne1rUsOYWo5kgaMJ62ztHV2agWHdkYSOcNLohOGB4rY8xjjCKnByWeBnOOvjBRAPdG+7LKUpcA==
   /capture-stack-trace/1.0.0:
     dev: true
     engines:
@@ -2355,7 +2355,7 @@ packages:
       integrity: sha1-v2zoO4dRDRY0Ru6qV37WpvxYNeA=
   /root-link-target/1.0.1:
     dependencies:
-      can-link: 1.0.1
+      can-link: 1.0.2
       graceful-fs: 4.1.11
       next-path: 1.0.0
       path-temp: 1.0.0
@@ -2788,7 +2788,7 @@ packages:
       resolve: 1.5.0
       semver: 5.5.0
       tslib: 1.9.0
-      tsutils: 2.21.1
+      tsutils: 2.21.2
     dev: true
     engines:
       node: '>=4.8.0'
@@ -2796,14 +2796,14 @@ packages:
       typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev'
     resolution:
       integrity: sha1-ElX4ej/1frCw4fDmEKi0dIBGya4=
-  /tsutils/2.21.1:
+  /tsutils/2.21.2:
     dependencies:
       tslib: 1.9.0
     dev: true
     peerDependencies:
       typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev'
     resolution:
-      integrity: sha512-heMkdeQ9iUc90ynfiNo5Y+GXrEEGy86KMvnSTfHO+Q40AuNQ1lZGXcv58fuU9XTUxI0V7YIN9xPN+CO9b1Gn3w==
+      integrity: sha512-iaIuyjIUeFLdD39MYdzqBuY7Zv6+uGxSwRH4mf+HuzsnznjFz0R2tGrAe0/JvtNh91WrN8UN/DZRFTZNDuVekA==
   /typescript/2.7.2:
     dev: true
     engines:
