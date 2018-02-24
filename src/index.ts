@@ -40,6 +40,11 @@ async function storePathRelativeToHome (pkgRoot: string, relStore: string) {
   }
   try {
     const mountpoint = await rootLinkTarget(tempFile)
+    // If linking works only in the project folder
+    // then prefer to place the store inside the homedir
+    if (path.relative(pkgRoot, mountpoint) === '.') {
+      return path.join(homedir, relStore, STORE_VERSION)
+    }
     return path.join(mountpoint, relStore, STORE_VERSION)
   } catch (err) {
     // this is an unlikely situation but if there is no way to find
