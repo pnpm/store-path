@@ -32,7 +32,7 @@ async function storePathRelativeToHome (pkgRoot: string, relStore: string) {
   await mkdirp(path.dirname(tempFile))
   await touch(tempFile)
   const homedir = getHomedir()
-  if (await canLink(tempFile, path.join(homedir, path.basename(tempFile)))) {
+  if (await canLink(tempFile, pathTemp(homedir))) {
     await fs.unlink(tempFile)
     // If the project is on the drive on which the OS home directory
     // then the store is placed in the home directory

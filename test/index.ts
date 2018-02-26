@@ -11,3 +11,8 @@ test('storePath()', async (t) => {
   t.ok(await storePath(path.join(temp, 'subdir')), 'works with dir that does not exist yet')
   t.end()
 })
+
+test('storePath() does not fail when pkgRoot is $HOME', async (t) => {
+  t.ok(await storePath(process.env.HOME))
+  t.end()
+})
