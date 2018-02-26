@@ -33,7 +33,6 @@
   "dependencies": {
     "@types/node": "^9.4.6",
     "@types/touch": "^3.1.0",
-    "@types/uuid": "^3.4.3",
     "can-link": "^1.0.1",
     "mkdirp-promise": "^5.0.1",
     "mz": "^2.7.0",
@@ -41,8 +40,7 @@
     "path-absolute": "^1.0.0",
     "path-temp": "^1.0.0",
     "root-link-target": "^1.0.1",
-    "touch": "^3.1.0",
-    "uuid": "^3.2.1"
+    "touch": "^3.1.0"
   },
   "devDependencies": {
     "mos": "^2.0.0-alpha.3",

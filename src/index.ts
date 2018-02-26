@@ -7,7 +7,6 @@ import pathAbsolute = require('path-absolute')
 import pathTemp = require('path-temp')
 import rootLinkTarget = require('root-link-target')
 import touch = require('touch')
-import uuid = require('uuid')
 
 const STORE_VERSION = '2'
 
@@ -33,7 +32,7 @@ async function storePathRelativeToHome (pkgRoot: string, relStore: string) {
   await mkdirp(path.dirname(tempFile))
   await touch(tempFile)
   const homedir = getHomedir()
-  if (await canLink(tempFile, path.join(homedir, uuid()))) {
+  if (await canLink(tempFile, pathTemp(homedir))) {
     await fs.unlink(tempFile)
     // If the project is on the drive on which the OS home directory
     // then the store is placed in the home directory
