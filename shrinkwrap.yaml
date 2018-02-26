@@ -1,6 +1,7 @@
 dependencies:
   '@types/node': 9.4.6
   '@types/touch': 3.1.0
+  '@types/uuid': 3.4.3
   can-link: 1.0.2
   mkdirp-promise: 5.0.1
   mz: 2.7.0
@@ -9,6 +10,7 @@ dependencies:
   path-temp: 1.0.0
   root-link-target: 1.0.1
   touch: 3.1.0
+  uuid: 3.2.1
 devDependencies:
   mos: 2.0.0-alpha.3
   mos-plugin-readme: 1.0.4
@@ -68,6 +70,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Bskfd5wztYbQ/mvU4rgHUB3fKcjW2hA6o/F0JN8O+jRPJQDN/2pPV6SmdIiFm2vLyyN/XQzoCULTE05ZOpnNbQ==
+  /@types/uuid/3.4.3:
+    dependencies:
+      '@types/node': 9.4.6
+    dev: false
+    resolution:
+      integrity: sha512-5fRLCYhLtDb3hMWqQyH10qtF+Ud2JnNCXTCZ+9ktNdCcgslcuXkDTkFcJNk++MT29yDntDnlF1+jD+uVGumsbw==
   /@types/write-json-file/2.2.1:
     dev: true
     resolution:
@@ -2893,6 +2901,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Z+LoY3lyFVMN/zGOW/nc6/1Hsho=
+  /uuid/3.2.1:
+    dev: false
+    resolution:
+      integrity: sha512-jZnMwlb9Iku/O3smGWvZhauCf6cvvpKi4BKRiliS3cxnI+Gz9j5MEpTz2UFuXiKPJocb7gnsLHwiS05ige5BEA==
   /validate-npm-package-license/3.0.1:
     dependencies:
       spdx-correct: 1.0.2
@@ -2999,6 +3011,7 @@ shrinkwrapVersion: 3
 specifiers:
   '@types/node': ^9.4.6
   '@types/touch': ^3.1.0
+  '@types/uuid': ^3.4.3
   can-link: ^1.0.1
   mkdirp-promise: ^5.0.1
   mos: ^2.0.0-alpha.3
@@ -3015,3 +3028,4 @@ specifiers:
   ts-node: ^5.0.0
   tslint: ^5.8.0
   typescript: ^2.6.2
+  uuid: ^3.2.1
