@@ -1,4 +1,5 @@
 dependencies:
+  '@pnpm/store-path': 'link:../__package_previews__/store-path/@pnpm/store-path'
   '@types/node': 9.6.5
   '@types/touch': 3.1.0
   can-link: 1.0.2
@@ -10,6 +11,8 @@ dependencies:
   root-link-target: 1.0.1
   touch: 3.1.0
 devDependencies:
+  '@types/rimraf': 2.0.2
+  '@types/tape': 4.2.32
   mos: 2.0.0-alpha.3
   mos-plugin-readme: 1.0.4
   package-preview: 1.0.5
@@ -37,12 +40,24 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-hbuHZMfM0iOZn2FCGQBixibo8oc=
+  /@types/events/1.2.0:
+    dev: true
+    resolution:
+      integrity: sha512-KEIlhXnIutzKwRbQkGWb/I4HFqBuUykAdHgDED6xqwXJfONCjF5VoE0cXEiurh3XauygxzeDzgtXUqvLkxFzzA==
   /@types/fs-extra/5.0.2:
     dependencies:
       '@types/node': 9.6.5
     dev: true
     resolution:
       integrity: sha512-Q3FWsbdmkQd1ib11A4XNWQvRD//5KpPoGawA8aB2DR7pWKoW9XQv3+dGxD/Z1eVFze23Okdo27ZQytVFlweKvQ==
+  /@types/glob/5.0.35:
+    dependencies:
+      '@types/events': 1.2.0
+      '@types/minimatch': 3.0.3
+      '@types/node': 9.6.5
+    dev: true
+    resolution:
+      integrity: sha512-wc+VveszMLyMWFvXLkloixT4n0harUIVZjnpzztaZ0nKLuul7Z32iMt2fUFGAaZ4y1XWjFRMtCI5ewvyh4aIeg==
   /@types/got/7.1.8:
     dependencies:
       '@types/node': 9.6.5
@@ -53,6 +68,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-NrH6jPlV77QCVPhAHofWeiOr77TgpKt82c2RVxSBChWBJqyY/u4ngl3CA4mcsAg/w7rNLrkR7dkObMV0ihLLXw==
+  /@types/minimatch/3.0.3:
+    dev: true
+    resolution:
+      integrity: sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
   /@types/mz/0.0.32:
     dependencies:
       '@types/node': 9.6.5
@@ -62,6 +81,19 @@ packages:
   /@types/node/9.6.5:
     resolution:
       integrity: sha512-NOLEgsT6UiDTjnWG5Hd2Mg25LRyz/oe8ql3wbjzgSFeRzRROhPmtlsvIrei4B46UjERF0td9SZ1ZXPLOdcrBHg==
+  /@types/rimraf/2.0.2:
+    dependencies:
+      '@types/glob': 5.0.35
+      '@types/node': 9.6.5
+    dev: true
+    resolution:
+      integrity: sha512-Hm/bnWq0TCy7jmjeN5bKYij9vw5GrDFWME4IuxV08278NtU/VdGbzsBohcCUJ7+QMqmUq5hpRKB39HeQWJjztQ==
+  /@types/tape/4.2.32:
+    dependencies:
+      '@types/node': 9.6.5
+    dev: true
+    resolution:
+      integrity: sha512-xil0KO5wkPoixdBWGIGolPv9dekf6dVkjjJLAFYchfKcd4DICou67rgGCIO7wAh3i5Ff/6j9IDgZz+GU9cMaqQ==
   /@types/touch/3.1.0:
     dependencies:
       '@types/node': 9.6.5
@@ -3020,6 +3052,8 @@ shrinkwrapMinorVersion: 5
 shrinkwrapVersion: 3
 specifiers:
   '@types/node': ^9.4.6
+  '@types/rimraf': ^2.0.2
+  '@types/tape': ^4.2.32
   '@types/touch': ^3.1.0
   can-link: ^1.0.1
   mkdirp-promise: ^5.0.1

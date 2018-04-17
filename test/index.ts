@@ -13,6 +13,6 @@ test('storePath()', async (t) => {
 })
 
 test('storePath() does not fail when pkgRoot is $HOME', async (t) => {
-  t.ok(await storePath(process.env.HOME))
+  t.ok(await storePath(process.env.HOME as string))
   t.end()
 })
