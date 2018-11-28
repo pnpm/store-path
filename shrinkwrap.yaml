@@ -3116,18 +3116,18 @@ specifiers:
   '@types/rimraf': ^2.0.2
   '@types/tape': ^4.2.32
   '@types/touch': ^3.1.0
-  can-link: ^1.0.1
-  mkdirp-promise: ^5.0.1
+  can-link: 1.0.2
+  mkdirp-promise: 5.0.1
   mos: ^2.0.0-alpha.3
   mos-plugin-readme: ^1.0.4
-  mz: ^2.7.0
+  mz: 2.7.0
   package-preview: ^1.0.1
-  path-absolute: ^1.0.0
-  path-temp: ^1.0.0
+  path-absolute: 1.0.1
+  path-temp: 1.0.0
   rimraf: ^2.6.2
-  root-link-target: ^1.0.1
+  root-link-target: 1.0.1
   tape: ^4.8.0
-  touch: ^3.1.0
+  touch: 3.1.0
   ts-node: ^7.0.0
   tslint: ^5.8.0
   typescript: ^3.0.0
