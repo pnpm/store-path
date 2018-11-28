@@ -1,7 +1,7 @@
 import canLink = require('can-link')
 import mkdirp = require('mkdirp-promise')
 import fs = require('mz/fs')
-import osHomedir = require('os-homedir')
+import os = require('os')
 import path = require('path')
 import pathAbsolute = require('path-absolute')
 import pathTemp = require('path-temp')
@@ -56,7 +56,7 @@ async function storePathRelativeToHome (pkgRoot: string, relStore: string) {
 }
 
 function getHomedir () {
-  const home = osHomedir()
+  const home = os.homedir()
   if (!home) throw new Error('Could not find the homedir')
   return home
 }

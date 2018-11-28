@@ -31,12 +31,11 @@
   },
   "homepage": "https://github.com/pnpm/store-path#readme",
   "dependencies": {
-    "@types/node": "^9.4.6",
+    "@types/node": "^9.4.6 || 10",
     "@types/touch": "^3.1.0",
     "can-link": "^1.0.1",
     "mkdirp-promise": "^5.0.1",
     "mz": "^2.7.0",
-    "os-homedir": "^1.0.2",
     "path-absolute": "^1.0.0",
     "path-temp": "^1.0.0",
     "root-link-target": "^1.0.1",

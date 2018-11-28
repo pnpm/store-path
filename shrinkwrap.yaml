@@ -1,10 +1,9 @@
 dependencies:
-  '@types/node': 9.6.39
+  '@types/node': 10.12.10
   '@types/touch': 3.1.1
   can-link: 1.0.2
   mkdirp-promise: 5.0.1
   mz: 2.7.0
-  os-homedir: 1.0.2
   path-absolute: 1.0.1
   path-temp: 1.0.0
   root-link-target: 1.0.1
@@ -78,7 +77,6 @@ packages:
     resolution:
       integrity: sha512-cy3yebKhrHuOcrJGkfwNHhpTXQLgmXSv1BX+4p32j+VUQ6aP2eJ5cL7OvGcAQx75fCTFaAIIAKewvqL+iwSd4g==
   /@types/node/10.12.10:
-    dev: true
     resolution:
       integrity: sha512-8xZEYckCbUVgK8Eg7lf5Iy4COKJ5uXlnIOnePN0WUwSQggy9tolM+tDJf7wMOnT/JT/W9xDYIaYggt3mRV2O5w==
   /@types/node/9.6.39:
@@ -1896,6 +1894,7 @@ packages:
     resolution:
       integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
   /os-homedir/1.0.2:
+    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
@@ -3113,7 +3112,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  '@types/node': ^9.4.6
+  '@types/node': ^9.4.6 || 10
   '@types/rimraf': ^2.0.2
   '@types/tape': ^4.2.32
   '@types/touch': ^3.1.0
@@ -3122,7 +3121,6 @@ specifiers:
   mos: ^2.0.0-alpha.3
   mos-plugin-readme: ^1.0.4
   mz: ^2.7.0
-  os-homedir: ^1.0.2
   package-preview: ^1.0.1
   path-absolute: ^1.0.0
   path-temp: ^1.0.0
