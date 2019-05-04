@@ -11,7 +11,7 @@
     "prepublishOnly": "npm run tsc",
     "tsc": "rimraf lib && tsc",
     "lint": "tslint -c tslint.json --project .",
-    "test": "npm run lint && preview && ts-node test && mos t"
+    "test": "npm run lint && preview && ts-node test"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
     "store"
   ],
   "engines": {
-    "node": ">=4"
+    "node": ">=8.15"
   },
   "author": "Zoltan Kochan <z@kochan.io> (https://www.kochan.io/)",
   "license": "MIT",
@@ -31,27 +31,27 @@
   },
   "homepage": "https://github.com/pnpm/store-path#readme",
   "dependencies": {
-    "@types/node": "^9.4.6 || 10",
-    "@types/touch": "^3.1.0",
     "can-link": "1.0.2",
     "mkdirp-promise": "5.0.1",
     "mz": "2.7.0",
     "path-absolute": "1.0.1",
-    "path-temp": "1.0.0",
-    "root-link-target": "1.0.1",
+    "path-temp": "2.0.0",
+    "root-link-target": "2.0.0",
     "touch": "3.1.0"
   },
   "devDependencies": {
+    "@types/node": "^12.0.0",
     "@types/rimraf": "^2.0.2",
-    "@types/tape": "^4.2.32",
+    "@types/tape": "^4.2.33",
+    "@types/touch": "^3.1.1",
     "mos": "^2.0.0-alpha.3",
     "mos-plugin-readme": "^1.0.4",
-    "package-preview": "^1.0.1",
-    "rimraf": "^2.6.2",
-    "tape": "^4.8.0",
-    "ts-node": "^7.0.0",
-    "tslint": "^5.8.0",
-    "typescript": "^3.0.0"
+    "package-preview": "^2.0.0",
+    "rimraf": "^2.6.3",
+    "tape": "^4.10.1",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
   },
   "mos": {
     "plugins": [

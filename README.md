@@ -9,7 +9,7 @@
 ## Installation
 
 ```sh
-npm i -S @pnpm/store-path
+<pnpm|yarn|npm> add @pnpm/store-path
 ```
 
 ## Usage
