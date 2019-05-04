@@ -1,7 +1,7 @@
-import test = require('tape')
 import storePath from '@pnpm/store-path'
-import rimraf = require('rimraf')
 import path = require('path')
+import rimraf = require('rimraf')
+import test = require('tape')
 
 const temp = path.join(__dirname, 'temp')
 rimraf.sync(temp)
