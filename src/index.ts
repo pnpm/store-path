@@ -1,5 +1,5 @@
 import canLink = require('can-link')
-import mkdirp = require('mkdirp-promise')
+import makeDir = require('make-dir')
 import fs = require('mz/fs')
 import os = require('os')
 import path = require('path')
@@ -29,7 +29,7 @@ export default async function (
 
 async function storePathRelativeToHome (pkgRoot: string, relStore: string) {
   const tempFile = pathTemp(pkgRoot)
-  await mkdirp(path.dirname(tempFile))
+  await makeDir(path.dirname(tempFile))
   await touch(tempFile)
   const homedir = getHomedir()
   if (await canLink(tempFile, pathTemp(homedir))) {
