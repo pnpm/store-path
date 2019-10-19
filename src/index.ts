@@ -40,7 +40,7 @@ async function storePathRelativeToHome (pkgRoot: string, relStore: string) {
   }
   try {
     let mountpoint = await rootLinkTarget(tempFile)
-    // Usually, it is dissallowed to write files into the drive's root.
+    // Usually, it is disallowed to write files into the drive's root.
     // So we create an empty directory and try to link there.
     // The store will be a directory anyway.
     const mountpointParent = path.join(mountpoint, '..')
