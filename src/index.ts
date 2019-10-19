@@ -39,10 +39,17 @@ async function storePathRelativeToHome (pkgRoot: string, relStore: string) {
     return path.join(homedir, relStore, STORE_VERSION)
   }
   try {
-    const mountpoint = await rootLinkTarget(tempFile)
+    let mountpoint = await rootLinkTarget(tempFile)
+    // Usually, it is dissallowed to write files into the drive's root.
+    // So we create an empty directory and try to link there.
+    // The store will be a directory anyway.
+    const mountpointParent = path.join(mountpoint, '..')
+    if (!dirsAreEqual(mountpointParent, mountpoint) && await canLinkToSubdir(tempFile, mountpointParent)) {
+      mountpoint = mountpointParent
+    }
     // If linking works only in the project folder
     // then prefer to place the store inside the homedir
-    if (path.relative(pkgRoot, mountpoint) === '.') {
+    if (dirsAreEqual(pkgRoot, mountpoint)) {
       return path.join(homedir, relStore, STORE_VERSION)
     }
     return path.join(mountpoint, relStore, STORE_VERSION)
@@ -53,6 +60,23 @@ async function storePathRelativeToHome (pkgRoot: string, relStore: string) {
   } finally {
     await fs.unlink(tempFile)
   }
+}
+
+async function canLinkToSubdir (fileToLink: string, dir: string) {
+  let result = false
+  try {
+    const tmpDir = pathTemp(dir)
+    await makeDir(tmpDir)
+    result = await canLink(fileToLink, pathTemp(tmpDir))
+    await fs.rmdir(tmpDir)
+  } catch (err) {
+    return false
+  }
+  return result
+}
+
+function dirsAreEqual (dir1: string, dir2: string) {
+  return path.relative(dir1, dir2) === '.'
 }
 
 function getHomedir () {
