@@ -19,7 +19,7 @@ devDependencies:
   tape: 4.11.0
   ts-jest: 25.1.0_jest@25.1.0
   ts-node: 8.5.2_typescript@3.7.2
-  tslint: 5.20.1_typescript@3.7.2
+  tslint: 6.1.0_typescript@3.7.2
   typescript: 3.7.2
 lockfileVersion: 5.1
 packages:
@@ -1266,6 +1266,12 @@ packages:
       node: '>=0.3.1'
     resolution:
       integrity: sha512-s2+XdvhPCOF01LRQBC8hf4vhbVmI2CGS5aZnxLJlT5FtdhPCDFq80q++zK2KlrVorVDdL5BOGZ/VfLrVtYNF+Q==
+  /diff/4.0.2:
+    dev: true
+    engines:
+      node: '>=0.3.1'
+    resolution:
+      integrity: sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
   /domexception/1.0.1:
     dependencies:
       webidl-conversions: 4.0.2
@@ -3625,6 +3631,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-+hTmAldEGE80U2wJJDC1lebb5jWqvTYAfm3YZ1ckk1gBr0MnCqUKlwK1e+anaFljIl+F5tR5IoZcm4ZDA1zMQw==
+  /resolve/1.15.1:
+    dependencies:
+      path-parse: 1.0.6
+    dev: true
+    resolution:
+      integrity: sha512-84oo6ZTtoTUpjgNEr5SJyzQhzL72gaRodsSfyxC/AXRvwu0Yse9H8eF9IpGo7b8YetZhlI6v7ZQ6bKBFV/6S7w==
   /resumer/0.0.0:
     dependencies:
       through: 2.3.8
@@ -4324,24 +4336,24 @@ packages:
       typescript: '>=2.0'
     resolution:
       integrity: sha512-W1DK/a6BGoV/D4x/SXXm6TSQx6q3blECUzd5TN+j56YEMX3yPVMpHsICLedUw3DvGF3aTQ8hfdR9AKMaHjIi+A==
-  /tslib/1.10.0:
+  /tslib/1.11.1:
     dev: true
     resolution:
-      integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
-  /tslint/5.20.1_typescript@3.7.2:
+      integrity: sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
+  /tslint/6.1.0_typescript@3.7.2:
     dependencies:
-      '@babel/code-frame': 7.5.5
+      '@babel/code-frame': 7.8.3
       builtin-modules: 1.1.1
       chalk: 2.4.2
       commander: 2.20.3
-      diff: 4.0.1
+      diff: 4.0.2
       glob: 7.1.6
       js-yaml: 3.13.1
       minimatch: 3.0.4
       mkdirp: 0.5.1
-      resolve: 1.13.0
+      resolve: 1.15.1
       semver: 5.7.1
-      tslib: 1.10.0
+      tslib: 1.11.1
       tsutils: 2.29.0_typescript@3.7.2
       typescript: 3.7.2
     dev: true
@@ -4351,10 +4363,10 @@ packages:
     peerDependencies:
       typescript: '>=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev'
     resolution:
-      integrity: sha512-EcMxhzCFt8k+/UP5r8waCf/lzmeSyVlqxqMEDQE7rWYiQky8KpIBz1JAoYXfROHrPZ1XXd43q8yQnULOLiBRQg==
+      integrity: sha512-fXjYd/61vU6da04E505OZQGb2VCN2Mq3doeWcOIryuG+eqdmFUXTYVwdhnbEu2k46LNLgUYt9bI5icQze/j0bQ==
   /tsutils/2.29.0_typescript@3.7.2:
     dependencies:
-      tslib: 1.10.0
+      tslib: 1.11.1
       typescript: 3.7.2
     dev: true
     peerDependencies:
@@ -4716,5 +4728,5 @@ specifiers:
   touch: 3.1.0
   ts-jest: ^25.0.0
   ts-node: ^8.1.0
-  tslint: ^5.16.0
+  tslint: ^6.0.0
   typescript: ^3.4.5
