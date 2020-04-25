@@ -22,7 +22,7 @@
     "store"
   ],
   "engines": {
-    "node": ">=8.15"
+    "node": ">=10.12"
   },
   "author": "Zoltan Kochan <z@kochan.io> (https://www.kochan.io/)",
   "license": "MIT",
@@ -32,7 +32,6 @@
   "homepage": "https://github.com/pnpm/store-path#readme",
   "dependencies": {
     "can-link": "1.0.2",
-    "make-dir": "^3.0.0",
     "mz": "2.7.0",
     "path-absolute": "1.0.1",
     "path-temp": "2.0.0",

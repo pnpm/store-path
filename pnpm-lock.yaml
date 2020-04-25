@@ -1,6 +1,5 @@
 dependencies:
   can-link: 1.0.2
-  make-dir: 3.0.0
   mz: 2.7.0
   path-absolute: 1.0.1
   path-temp: 2.0.0
@@ -2889,6 +2888,7 @@ packages:
   /make-dir/3.0.0:
     dependencies:
       semver: 6.3.0
+    dev: true
     engines:
       node: '>=8'
     resolution:
@@ -3866,6 +3866,7 @@ packages:
     resolution:
       integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
   /semver/6.3.0:
+    dev: true
     hasBin: true
     resolution:
       integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
@@ -4906,7 +4907,6 @@ specifiers:
   '@types/touch': ^3.1.1
   can-link: 1.0.2
   jest: ^25.0.0
-  make-dir: ^3.0.0
   mz: 2.7.0
   package-preview: ^3.0.0
   path-absolute: 1.0.1
