@@ -7,7 +7,7 @@ import pathTemp = require('path-temp')
 import rootLinkTarget = require('root-link-target')
 import touch = require('touch')
 
-const STORE_VERSION = '2'
+const STORE_VERSION = 'v3'
 
 export default async function (
   pkgRoot: string,
