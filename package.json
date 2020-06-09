@@ -40,7 +40,7 @@
     "touch": "^3.1.0"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.2",
+    "@types/jest": "^26.0.0",
     "@types/mz": "^2.7.1",
     "@types/node": "^14.0.1",
     "@types/rimraf": "^3.0.0",

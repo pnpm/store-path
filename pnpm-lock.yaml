@@ -6,7 +6,7 @@ dependencies:
   root-link-target: 2.0.0
   touch: 3.1.0
 devDependencies:
-  '@types/jest': 25.2.2
+  '@types/jest': 26.0.0
   '@types/mz': 2.7.1
   '@types/node': 14.0.1
   '@types/rimraf': 3.0.0
@@ -601,13 +601,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-P/W9yOX/3oPZSpaYOCQzGqgCQRXn0FFO/V8bWrCQs+wLmvVVxk6CRBXALEvNs9OHIatlnlFokfhuDo2ug01ciw==
-  /@types/jest/25.2.2:
+  /@types/jest/26.0.0:
     dependencies:
       jest-diff: 25.5.0
       pretty-format: 25.5.0
     dev: true
     resolution:
-      integrity: sha512-aRctFbG8Pb7DSLzUt/fEtL3q/GKb9mretFuYhRub2J0q6NhzBYbx9HTQzHrWgBNIxYOlxGNVe6Z54cpbUt+Few==
+      integrity: sha512-/yeMsH9HQ1RLORlXAwoLXe8S98xxvhNtUz3yrgrwbaxYjT+6SFPZZRksmRKRA6L5vsUtSHeN71viDOTTyYAD+g==
   /@types/minimatch/3.0.3:
     dev: true
     resolution:
@@ -5047,7 +5047,7 @@ packages:
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
-  '@types/jest': ^25.2.2
+  '@types/jest': ^26.0.0
   '@types/mz': ^2.7.1
   '@types/node': ^14.0.1
   '@types/rimraf': ^3.0.0
