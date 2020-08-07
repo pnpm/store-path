@@ -31,7 +31,7 @@ async function storePathRelativeToHome (pkgRoot: string, relStore: string) {
   await fs.mkdir(path.dirname(tempFile), { recursive: true })
   await touch(tempFile)
   const homedir = getHomedir()
-  if (await canLink(tempFile, pathTemp(homedir))) {
+  if (await canLinkToSubdir(tempFile, homedir)) {
     await fs.unlink(tempFile)
     // If the project is on the drive on which the OS home directory
     // then the store is placed in the home directory
@@ -63,15 +63,24 @@ async function storePathRelativeToHome (pkgRoot: string, relStore: string) {
 
 async function canLinkToSubdir (fileToLink: string, dir: string) {
   let result = false
+  const tmpDir = pathTemp(dir)
   try {
-    const tmpDir = pathTemp(dir)
     await fs.mkdir(tmpDir, { recursive: true })
     result = await canLink(fileToLink, pathTemp(tmpDir))
-    await fs.rmdir(tmpDir)
   } catch (err) {
-    return false
+    result = false
+  } finally {
+    await safeRmdir(tmpDir)
   }
   return result
+}
+
+async function safeRmdir (dir: string) {
+  try {
+    await fs.rmdir(dir)
+  } catch (err) {
+    // ignore
+  }
 }
 
 function dirsAreEqual (dir1: string, dir2: string) {
