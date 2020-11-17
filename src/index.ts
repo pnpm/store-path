@@ -1,3 +1,4 @@
+import rimraf = require('@zkochan/rimraf')
 import canLink = require('can-link')
 import fs = require('mz/fs')
 import os = require('os')
@@ -77,7 +78,10 @@ async function canLinkToSubdir (fileToLink: string, dir: string) {
 
 async function safeRmdir (dir: string) {
   try {
-    await fs.rmdir(dir)
+    // We cannot use just fs.rmdir here because can-link
+    // sometimes might not remove the temporary file in time
+    // and fs.rmdir can only remove an empty directory.
+    await rimraf(dir)
   } catch (err) {
     // ignore
   }

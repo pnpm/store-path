@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/pnpm/store-path#readme",
   "dependencies": {
+    "@zkochan/rimraf": "^1.0.0",
     "can-link": "^1.0.2",
     "mz": "^2.7.0",
     "path-absolute": "^1.0.1",
