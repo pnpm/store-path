@@ -1,6 +1,6 @@
+import { promises as fs } from 'fs'
 import rimraf = require('@zkochan/rimraf')
 import canLink = require('can-link')
-import fs = require('mz/fs')
 import os = require('os')
 import path = require('path')
 import pathAbsolute = require('path-absolute')

@@ -1,4 +1,4 @@
-module.exports = {
+module.exports.promises = {
   mkdir: () => {},
   unlink: () => {},
   rmdir: () => {},

@@ -1,4 +1,5 @@
 jest.mock('os')
+jest.mock('fs')
 import storePath from '../src'
 
 test('when a link can be created to the homedir', async () => {
