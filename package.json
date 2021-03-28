@@ -23,7 +23,7 @@
     "store"
   ],
   "engines": {
-    "node": ">=10.12"
+    "node": ">=12.10"
   },
   "author": "Zoltan Kochan <z@kochan.io> (https://www.kochan.io/)",
   "license": "MIT",
@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/pnpm/store-path#readme",
   "dependencies": {
-    "@zkochan/rimraf": "^1.0.0",
+    "@zkochan/rimraf": "^2.0.0",
     "can-link": "^2.0.0",
     "path-absolute": "^1.0.1",
     "path-temp": "^2.0.0",
