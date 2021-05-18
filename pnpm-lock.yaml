@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@types/jest': ^26.0.20
-  '@types/node': 14.14.42
+  '@types/node': 14.17.0
   '@types/rimraf': ^3.0.0
   '@types/tape': ^4.13.0
   '@types/touch': ^3.1.1
@@ -31,7 +31,7 @@ dependencies:
 
 devDependencies:
   '@types/jest': 26.0.20
-  '@types/node': 14.14.42
+  '@types/node': 14.17.0
   '@types/rimraf': 3.0.0
   '@types/tape': 4.13.0
   '@types/touch': 3.1.1
@@ -640,8 +640,8 @@ packages:
     resolution: {integrity: sha512-skWxepWOs+VArEBWd2S/VR3wUavioIIx9/HzW+UJiIjtwa6+kNXdsOeq7FfxDXf56hIcL0ieo2brwMgBJ1+lhw==}
     dev: true
 
-  /@types/node/14.14.42:
-    resolution: {integrity: sha512-88QoObqn9WYIUMRzOx92GmSHmU3JCyukC2ulEv8tFjUG9VeV2FQ/cA7VQ1gi+rB/+gBMVvzVFcTnz8RdMDVIWw==}
+  /@types/node/14.17.0:
+    resolution: {integrity: sha512-w8VZUN/f7SSbvVReb9SWp6cJFevxb4/nkG65yLAya//98WgocKm5PLDAtSs5CtJJJM+kHmJjO/6mmYW4MHShZA==}
     dev: true
 
   /@types/normalize-package-data/2.4.0:
