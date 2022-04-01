@@ -1,3 +1,5 @@
+**This package has been moved to the [pnpm monorepo](https://github.com/pnpm/pnpm)**
+
 # @pnpm/store-path
 
 > Resolves the pnpm store path
